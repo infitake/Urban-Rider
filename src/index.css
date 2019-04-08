@@ -123,7 +123,6 @@ input[type="email"]{
   flex-wrap: nowrap;
   justify-content: space-around;
   margin: 20px;
-
 }
 .btn {
   width: 150px;
@@ -149,3 +148,121 @@ input[type="email"]{
   margin-left: 400px; 
 }
 
+@media screen and (max-width: 550px) {
+  #navbar {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-logo {
+    margin-left: 30%;
+  }
+  .info-box {
+    display: flex;
+   flex-direction: column;
+  }
+  .image-area {
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 70px; 
+  }
+  .box1,.box2,.box3 {
+    display: flex;
+    flex-direction: column;
+    }
+  div.all-services {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .all-contant {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-field {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  input[type="text"], input[type="email"]{
+    width: 300px;
+    height: 50px;
+  }
+  img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  }
+  
+}
+@media screen and (min-width:550px) and (max-width: 800px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .info-box {
+    display: flex;
+   flex-direction: column;
+  }
+  .image-area {
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 70px; 
+  }
+  .box1,.box2,.box3 {
+    display: flex;
+    flex-direction: column;
+    }
+  div.all-services {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .all-contant {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-field {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  input[type="text"], input[type="email"]{
+    width: 300px;
+    height: 50px;
+  }
+  img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1050px) {
+  .image-area {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 35%; 
+  }
+  .container #pricing {
+    float: center;
+  }
+  div.info-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    text-align: center;
+  
+  }
+  .box1,.box2,.box3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+    }
+  div.all-services {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+  }
+}
