@@ -1,28 +1,61 @@
 import React from 'react';
-import { Zoom } from 'react-slideshow-image';
+import { Slide } from 'react-slideshow-image';
  
-const images = [
-    'image/gallry.png',
-    'image/gallry.png',
-    'image/gallry.png'
+const slideImages = [
+    '/image/gallary2.png',
+    '/image/gallary3.jpg',
+    '/image/gallary4.jpg',
+    '/image/gallary5.jpg',
+    '/image/gallary6.jpg',
+    '/image/gallary7.jpg',
+    '/image/gallary8.jpg'
 ];
  
-const zoomOutProperties = {
-  duration: 5000,
+const properties = {
   transitionDuration: 500,
-  infinite: true,
   indicators: true,
-  scale: 0.4,
   arrows: true
 }
  
 const Slideshow = () => {
     return (
-      <Zoom {...zoomOutProperties}>
-        {
-          images.map((each, index) => <img key={index} style={{width: "100%"}} src={each} alt="student" />)
-        }
-      </Zoom>
+      <Slide {...properties}>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[0]} alt="student" />
+          </div>
+        </div>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[1]} alt="student" />
+          </div>
+        </div>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[2]} alt="student" />
+          </div>
+        </div>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[3]} alt="student" />
+          </div>
+        </div>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[4]} alt="student" />
+          </div>
+        </div>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[5]} alt="student" />
+          </div>
+        </div>
+        <div className="each-slide">
+          <div>
+          <img src={slideImages[6]} alt="student" />
+          </div>
+        </div>
+      </Slide>
     )
 }
 export default Slideshow;

@@ -3,11 +3,12 @@ import React from 'react';
 const Pricing = () => {
         return (
             <div className="container" id="pricing">
+            <h1 className="input-Entrys">Pricing</h1>
                 <div className="info-box">
                     <div className="rect-box">
                         <div className="box1">
                             <p>Day Pass</p>
-                            <span>49$ /Person</span>
+                            <span><i class="fa fa-inr"></i> 499 / Person</span>
                             <hr/>
                             <div className="special-information">
                                 Acess to any available desk <br />
@@ -18,7 +19,7 @@ const Pricing = () => {
                     <div className="rect-box">
                         <div className="box2">
                             <p>Metting Room</p>
-                            <span>49$ /Person/hour</span>
+                            <span><i class="fa fa-inr"></i> 499 / Person / hour</span>
                             <br />
                             <hr/>
                             <div className="special-information">
@@ -30,7 +31,7 @@ const Pricing = () => {
                     <div className="rect-box">
                         <div className="box3">
                             <p>Dedicated Desk</p>
-                            <span>200$ /Person</span>
+                            <span><i class="fa fa-inr"></i> 2000* / Person</span>
                             <hr/>
                             <div className="special-information">
                                 The flexibility of being social<br />

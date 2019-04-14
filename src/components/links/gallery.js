@@ -1,7 +1,7 @@
 import React from 'react';
 import Slideshow from './slideshow'
 
-const gallary = () => {
+const Gallary = () => {
         return (
             <div className="container">
                 <div className="gallary">
@@ -16,4 +16,4 @@ const gallary = () => {
         )
 }
 
-export default gallary;
+export default Gallary;

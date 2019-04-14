@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/layout/navbar';
-import home from './components/links/home';
+import Home from './components/links/home';
 import Pricing from './components/links/Pricing';
 import Contact from './components/links/contact';
-import gallary from './components/links/gallery';
+import Gallary from './components/links/gallery';
 
 class App extends Component {
   render() {
@@ -14,10 +14,10 @@ class App extends Component {
           <Navbar />
         </div>
         <Switch>
-          <Route exact path='/' component={home} />
+          <Route exact path='/' component={Home} />
           <Route path='/pricing' component={Pricing} />
           <Route path='/contact' component = {Contact} />
-          <Route path='/gallary' component = {gallary} />
+          <Route path='/gallary' component = {Gallary} />
         </Switch>
       </BrowserRouter>
     );
