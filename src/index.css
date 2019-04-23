@@ -17,10 +17,11 @@ code {
   position: sticky;
   z-index: 500;
   top:0;
+  width: 100%;
 }
 #navbar {
   background-color: rgb(62, 168, 237);
-  max-width: 100%;
+  width: 100%;
   height: 70px;
   position: sticky;
 }
@@ -168,11 +169,82 @@ input[type="email"]{
   margin-left: 400px; 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  #navbar {
+    height: 120px;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+  }
+  .showing-nav ul li{
+    float: right;
+    padding: 10px;
+    text-decoration:none;
+    margin-right: 10px;
+  }
+  .main-logo {
+    margin-left: 30%;
+  }
+  .main-text h1 {
+    font-size: 25px;
+  }
+  .main-text p {
+    font-size: 20px;
+  }
+  .info-box {
+    display: flex;
+   flex-direction: column;
+  }
+  .image-area {
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 30px; 
+  }
+  .box1,.box2,.box3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    }
+  div.all-services {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .all-contant {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-field {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  input[type="text"], input[type="email"]{
+    width: 300px;
+    height: 50px;
+  }
+  img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  }
+  .input-Entrys {
+    text-align: center;
+    color: rgb(62, 168, 237);
+    margin: 15px;
+  }
+  #pricing {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 550px) {
   #navbar {
     height: 120px;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
   }
   .main-logo {
     margin-left: 30%;
@@ -184,11 +256,13 @@ input[type="email"]{
   .image-area {
     max-width: 300px;
     max-height: 300px;
-    margin-left: 70px; 
+    margin-left: 40px; 
   }
   .box1,.box2,.box3 {
     display: flex;
     flex-direction: column;
+    margin: 15px;
+    padding: 10px;
     }
   div.all-services {
     display: flex;
@@ -198,6 +272,12 @@ input[type="email"]{
   .all-contant {
     display: flex;
     flex-direction: column;
+  }
+  .main-text h1 {
+    font-size: 35px;
+  }
+  .main-text p {
+    font-size: 30px;
   }
   .input-field {
     margin: 0px;
@@ -212,6 +292,15 @@ input[type="email"]{
     width: 300px;
     height: 200px;
     margin: 10px;
+  }
+  .input-Entrys {
+    text-align: center;
+    color: rgb(62, 168, 237);
+    margin-top: 25px;
+    padding: 20px;
+  }
+  #pricing {
+    margin-top: 100px;
   }
   
 }
@@ -220,24 +309,26 @@ input[type="email"]{
     margin: 0px;
     padding: 0px;
   }
+  #navbar {
+    max-width: 100%;
+  }
   .info-box {
     display: flex;
    flex-direction: column;
   }
   .image-area {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
     margin-left: 70px; 
   }
   .box1,.box2,.box3 {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    margin-left: 25%;
+    padding: 10px;
     }
-  div.all-services {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-  }
+ 
   .all-contant {
     display: flex;
     flex-direction: column;
@@ -255,6 +346,9 @@ input[type="email"]{
     width: 300px;
     height: 200px;
     margin: 10px;
+  }
+  #pricing {
+    margin-top: 100px;
   }
 
 }
@@ -280,11 +374,6 @@ input[type="email"]{
     flex-direction: column;
     text-align: center
     }
-  div.all-services {
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
-  }
 }
 .svg_img{
   margin-top:-30px;

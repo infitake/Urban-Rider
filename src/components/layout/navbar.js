@@ -18,7 +18,7 @@ class Navbar extends Component {
                 </div>
                 <nav className="showing-nav">
                     <ul className="nav-pills">
-                        <li ><a  href="#contact"  className="links" onClick={this.handleChange} activeClassName="active">Contact</a></li>
+                        <li ><a href="#contact"  className="links" onClick={this.handleChange} activeClassName="active">Contact</a></li>
                         <li><a  href="#pricing"  className="links" activeClassName="active">Pricing</a></li>
                         <li><a  href="#gallary" className="links" activeClassName="active">Gallary</a></li>
                         <li><a  href="#" className="links" activeClassName="active">Home</a></li>
